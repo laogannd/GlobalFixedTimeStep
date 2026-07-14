@@ -7,7 +7,11 @@ public class GlobalFixedTimeStep : ModuleRules
 	public GlobalFixedTimeStep(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
+
+		// Adopt the UE5.8 include ordering so the correct deprecation
+		// macros (UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_8) are applied.
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...

@@ -2,6 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
+	"EngineVersion": "5.8.0",
 	"FriendlyName": "GlobalFixedTimeStep",
 	"Description": "Provides a global fixed timestep update system with configurable tick rate, accumulator pattern, and Blueprint-accessible delegates.",
 	"Category": "Gameplay",
